@@ -9,25 +9,25 @@
 | gym        | 0.15.3 |
 
 **文件结构**
-
 UAV_DDPG
 
-├─ TD3
+├─ TD3  *//TD3算法*
 
-│  ├─ state_normalization.py
+│  ├─ state_normalization.py  *//状态归一化*
 
-│  ├─ TD3_algo.py
+│  ├─ TD3_algo.py  *//训练主函数*
 
-│  └─ UAV_env.py
-├─ Local_only
+│  └─ UAV_env.py  *//训练环境*
+
+├─ Local_only  *//本地计算*
 
 │  └─ Local_only.py
 
-├─ Edge_only
+├─ Edge_only  *//全部卸载计算*
 
 │  └─ Edge_only.py
 
-├─ DQN
+├─ DQN  *//DQN算法*
 
 │  ├─ dqn_algo.py
 
@@ -35,7 +35,7 @@ UAV_DDPG
 
 │  └─ UAV_env.py
 
-├─ DDPG
+├─ DDPG  *//DDPG算法*
 
 │  ├─ ddpg_algo.py
 
@@ -43,13 +43,13 @@ UAV_DDPG
 
 │  ├─ UAV_env.py
 
-│  ├─ DDPG_without_state_normalization
+│  ├─ DDPG_without_state_normalization  *//未经过归一化的DDPG*
 
 │  │  ├─ ddpg_algo.py
 
 │  │  └─ UAV_env.py
 
-│  └─ DDPG_without_behavior_noise
+│  └─ DDPG_without_behavior_noise  *//未加入噪声的DDPG*
 
 │     ├─ ddpg_algo.py
 
@@ -57,7 +57,7 @@ UAV_DDPG
 
 │     └─ UAV_env.py
 
-└─ Actor Critc
+└─ Actor Critc  *//演员-评论家算法*
 
    ├─ ac_algo.py
    
@@ -65,7 +65,6 @@ UAV_DDPG
    
    └─ UAV_env.py
    
-
 
 
 **运行方式**
